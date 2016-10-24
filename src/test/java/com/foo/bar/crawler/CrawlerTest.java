@@ -75,6 +75,8 @@ public class CrawlerTest {
                 e.printStackTrace();
             }
         });
+        executorService.shutdown();
+
 
     }
 

@@ -7,6 +7,7 @@ import java.util.*;
 import java.util.concurrent.Callable;
 
 /**
+ * This is the worker class.
  * Created by rbarthel on 10/24/16.
  */
 public class Crawler implements Callable<Crawler.CrawlerResults> {
@@ -17,6 +18,12 @@ public class Crawler implements Callable<Crawler.CrawlerResults> {
     private final Map<String, Page> addresses = new HashMap<>();
     private int id;
 
+    /**
+     * @param internet the internet this crawler will recurse over
+     * @param id exists to correlate a Crawler with crawler results.  This is mainly just for testing at the scope of this
+     * project.
+     *
+     */
     public Crawler(Internet internet, int id) {
         this.internet = internet;
         this.id = id;

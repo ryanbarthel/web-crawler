@@ -12,6 +12,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
+ * main() method with multi-threaded invocation of Crawler.  Also see com.foo.bar.crawler.CrawlerTest for more
+ * executions.
  * Created by rbarthel on 10/24/16.
  */
 public class WebCrawler  {
